@@ -20,7 +20,7 @@ const forecast = (long, lat, callback) => {
       if (error) {
         msg = "Unable to connect to weather service!";
       } else if (body) {
-        data = body.current.temperature;
+        data = body;
       } else {
         msg = body.error.info;
       }
