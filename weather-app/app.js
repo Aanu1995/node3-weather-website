@@ -46,11 +46,9 @@ const app = express();
 
 const port = process.env.PORT || 3000;
 
-app.get("/weather", (req, res) => {
+app.get("/", (req, res) => {
   if (!req.query.search) {
-    return res.send({
-      error: "please provide a valid address",
-    });
+    req.query.search = "Alabama";
   }
   geocode(req.query.search, (error, { latitude, longitude, location } = {}) => {
     if (error) {
@@ -60,6 +58,7 @@ app.get("/weather", (req, res) => {
     forecast(longitude, latitude, (error = "error", forecast) => {
       if (forecast) {
         return res.send({
+          search: req.query.search,
           location,
           temperature: forecast,
         });
