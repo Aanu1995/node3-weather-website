@@ -67,7 +67,8 @@ app.get("/", (req, res) => {
 
 app.get('/chaynik', (req, res) => {
     res.send({
-        image_url: 'https://s3-alpha-sig.figma.com/img/0199/0d3d/73bf9601bc7cea7b89a5818d0c88e403?Expires=1593993600&Signature=OGn2GN7sTZm5bPhynneXSpSFNp0DFdH0R5nK37pZaSmq7OCg2WtgBpdPXKZCXpIB8BAhVqdoe2NxGlJN9fFeulRWhP6cb1gSg0S5nmFhqLqpfPlpLzB1VuBamYeDsj5Rl3ulXpbztB3zyf6F4tnRSLHFRAPCzey59y73OSH2dsxBNsajAQ11KLN0qg6HvmlkrqChudHHPYWvxf5tRqhm6spUKo5G92rb4E8LBVpCoWfQdXeVz9gmiWe-wtdCWJU~LTCogK7TJLyBBOxsI249yiU3zV-IWo5Xz6NuSiT9n4U48NbWHKiEYRx4v7aDR9H5QnEBoxUlcwfqyBcM~J6m0Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA'
+        image_url: 'https://s3-alpha-sig.figma.com/img/0199/0d3d/73bf9601bc7cea7b89a5818d0c88e403?Expires=1593993600&Signature=OGn2GN7sTZm5bPhynneXSpSFNp0DFdH0R5nK37pZaSmq7OCg2WtgBpdPXKZCXpIB8BAhVqdoe2NxGlJN9fFeulRWhP6cb1gSg0S5nmFhqLqpfPlpLzB1VuBamYeDsj5Rl3ulXpbztB3zyf6F4tnRSLHFRAPCzey59y73OSH2dsxBNsajAQ11KLN0qg6HvmlkrqChudHHPYWvxf5tRqhm6spUKo5G92rb4E8LBVpCoWfQdXeVz9gmiWe-wtdCWJU~LTCogK7TJLyBBOxsI249yiU3zV-IWo5Xz6NuSiT9n4U48NbWHKiEYRx4v7aDR9H5QnEBoxUlcwfqyBcM~J6m0Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA',
+        primary_color: "#6C6C6C"
     },)
 });
 
